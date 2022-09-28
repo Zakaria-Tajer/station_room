@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Posts {
 
     String postUniqueId;
@@ -9,9 +11,10 @@ public class Posts {
     String timeToStartPlaying;
     String timeToEndPlaying;
     int price;
+    LocalDate dateEntered;
 
 
-    public Posts(String postUniqueId, String playerOccupyingThePostUsername, int price, int timeWanted, String gameGenera, String consolePLayingIn, String gamePlaying, String timeToStartPlaying, String timeToEndPlaying) {
+    public Posts(String postUniqueId, String playerOccupyingThePostUsername, int price, int timeWanted, String gameGenera, String consolePLayingIn, String gamePlaying, String timeToStartPlaying, String timeToEndPlaying, LocalDate dateEntered) {
         this.postUniqueId = postUniqueId;
         this.playerOccupyingThePostUsername = playerOccupyingThePostUsername;
         this.price = price;
@@ -21,7 +24,7 @@ public class Posts {
         this.gamePlaying = gamePlaying;
         this.timeToStartPlaying = timeToStartPlaying;
         this.timeToEndPlaying = timeToEndPlaying;
-
+        this.dateEntered = dateEntered;
     }
 
 

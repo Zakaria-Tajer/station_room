@@ -1,4 +1,5 @@
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -39,6 +40,14 @@ public class Times {
     public String getCurrentTime() {
         return timeFormat.format(calendar.getTime());
 
+    }
+    public int getDays() {
+        Calendar months = Calendar.getInstance();
+        return months.get(Calendar.DAY_OF_MONTH);
+    }
+    public LocalDate getMonths() {
+
+        return LocalDate.now();
     }
 
 
